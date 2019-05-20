@@ -1,0 +1,10 @@
+<!--pages/my/main.wxml-->
+<view class='me'>
+  <view class='m-header'>
+    <image src='{{userInfo.avatarUrl}}'></image>
+    <view class='username'>
+      <text>{{userInfo.nickName}}</text>
+      <text>微信用户</text>
+    </view>
+  </view>
+</view>

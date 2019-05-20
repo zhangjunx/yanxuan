@@ -1,0 +1,106 @@
+/* pages/shop/main.wxss */
+page{
+  background: #f4f4f4;
+}
+.s-item{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20rpx;
+  align-items: center;
+  
+  border-bottom: 1rpx solid #ccc;
+  background: #fff;
+  box-sizing: border-box;
+}
+.i-left{
+  display: flex;
+}
+.i-left .select{
+  margin: 0 20rpx;
+  width: 34rpx;
+  height: 125rpx;
+  background: url(http://nos.netease.com/mailpub/hxm/yanxuan-wap/p/20150730/style/img/icon-normal/checkbox-0e09baa37e.png) no-repeat center center;
+  background-size: 34rpx 34rpx;
+}
+
+.i-left >image{
+  width: 125rpx;
+  height: 125rpx;
+}
+.content >text{
+  font-size: 28rpx;
+}
+.content >view{
+  font-size: 28rpx;
+}
+
+.i-left .select.active{
+ background:url(http://nos.netease.com/mailpub/hxm/yanxuan-wap/p/20150730/style/img/icon-normal/checkbox-checked-822e54472a.png) no-repeat center center;
+background-size:34rpx 34rpx;
+
+}
+
+.allselect{
+  width: 100%;
+  height: 106rpx;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.a-left{
+  display: flex;
+  align-items: center;
+}
+.a-left text{
+  font-size: 28rpx;
+
+}
+.a-right{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+}
+.a-right text{
+  font-size: 28rpx;
+  color: #9c3232;
+  padding-right: 20rpx;
+}
+.a-right view{
+  width: 200rpx;
+  height: 100%;
+  background: #9c3232;
+  color: white;
+  text-align: center;
+  line-height: 106rpx;
+}
+
+.a-left .select{
+   margin: 0 20rpx;
+  width: 34rpx;
+  height: 125rpx;
+  background: url(http://nos.netease.com/mailpub/hxm/yanxuan-wap/p/20150730/style/img/icon-normal/checkbox-0e09baa37e.png) no-repeat center center;
+  background-size: 34rpx 34rpx;
+}
+.a-left .select.active{
+ background:url(http://nos.netease.com/mailpub/hxm/yanxuan-wap/p/20150730/style/img/icon-normal/checkbox-checked-822e54472a.png) no-repeat center center;
+background-size:34rpx 34rpx;
+}
+.all-item{
+  position: relative;
+}
+
+.del{
+  position: absolute;
+  top: 0;
+  right: -140rpx;
+  height: 125rpx;
+  width: 140rpx;
+  background: #9c3232;
+  color: white;
+  text-align: center;
+  line-height: 125rpx;
+}

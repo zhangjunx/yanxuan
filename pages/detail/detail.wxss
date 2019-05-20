@@ -1,0 +1,130 @@
+/* pages/detail/detail.wxss */
+page{
+  background: #f4f4f4;
+}
+.gg{
+  height: 108rpx;
+  width: 100%;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #999;
+  align-items: center;
+  margin-top: 40rpx;
+  background: white;
+}
+.gg text{
+  font-size: 28rpx;
+}
+
+
+.foot{
+  position:fixed;
+bottom:0;
+left:0;
+right:0;
+width:750rpx;
+height:100rpx;
+display:flex;
+background:#fff;
+z-index: 999;
+font-size: 28rpx;
+align-items: center;
+
+}
+
+.foot>view{
+  flex: 1;
+  height: 100%;
+  border: 1px solid #f4f4f4;
+  text-align: center;
+  line-height: 100rpx;
+  
+  
+}
+.foot .foot-jr{
+  background: #ed1b26;
+  color: #fff;
+}
+.foot-gw{
+  position: relative
+}
+.gw{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 34rpx;
+  height: 34rpx;
+  background: #ed1b26;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 34rpx;
+}
+
+.show-box{
+  position:fixed;
+width:100%;
+height:500rpx;
+bottom:-500rpx;
+transition:all 400ms ease;
+box-sizing:border-box;
+padding:30rpx;
+background:#fff;
+z-index: 11;
+
+}
+
+.box-top{
+  display: flex;
+}
+.box-top image{
+  width: 177rpx;
+  height: 177rpx;
+}
+.box-top .box-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  padding-top: 70rpx;
+  box-sizing: border-box;
+}
+.price{
+  color: #ed1b26;
+}
+.show-box .box-bottom{
+  margin-top: 40rpx;
+}
+.box-bottom .reduce{
+  width:322rpx;
+height:71rpx;
+line-height:71rpx;
+display:flex;
+border:1rpx solid #ccc;
+margin-top:20rpx;
+
+}
+.box-bottom .reduce view{
+  width: 90rpx;
+  text-align: center;
+}
+.box-bottom .reduce input{
+  flex:1;
+height:100%;
+text-align:center;
+border-left:1rpx solid #ccc;
+border-right:1rpx solid #ccc;
+
+}
+
+.mc{
+  background: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}

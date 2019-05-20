@@ -1,0 +1,31 @@
+/* pages/topic/main.wxss */
+page{
+  background: #f4f4f4;
+}
+.topic-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  margin-bottom: 20rpx;
+}
+.topic-item image{
+  width: 100%;
+  height: 415rpx;
+}
+.topic-item text{
+  margin: 10rpx;
+}
+.topic-item .title{
+  font-size: 35rpx;
+  color: #333;
+
+}
+.topic-item .subtitle{
+  font-size: 24rpx;
+  color: #999;
+}
+.topic-item .price{
+  font-size: 24rpx;
+  color: #9c3232;
+}

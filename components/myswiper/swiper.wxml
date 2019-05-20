@@ -1,0 +1,9 @@
+<!--components/myswiper/swiper.wxml-->
+<view class='myswiper'>
+
+  <swiper indicator-dots='true' autoplay='true'>
+    <swiper-item wx:for="{{imgs}}">
+      <image src='{{item.img_url}}'></image>
+    </swiper-item>
+  </swiper>
+</view>

@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<view class='home'>
+  <!-- 搜索框 -->
+  <view class='top'>
+    <view class='h-location'>河南省郑州市高新区创业中心</view>
+    <view class='h-search'>
+      <image src='../../images/search.png'></image>
+      <input class='search' type='text' placeholder='搜索商品'></input>
+    </view>
+  </view>
+  <!-- 轮播图 -->
+  <view style='height:417rpx;width:100%'>
+    <swiper class='swp' indicator-dots='true' autoplay='true' circular='true'>
+      <swiper-item wx:for="{{homeData.banner}}">
+        <image src="{{item.image_url}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!-- 分类导航 -->
+  <view class='nav'>
+    <view wx:for="{{homeData.channel}}" class='nav-item'>
+      <image src='{{item.icon_url}}'></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+
+  <!-- 热门产品 -->
+  <scroll-view class='hot-pro' scroll-x="true">
+    <view class='hp' wx:for="{{homeData.hotGoods}}">
+      <view class='pro-item'>
+        <image src='{{item.list_pic_url}}'></image>
+        <text class='title'>{{item.name}}</text>
+        <text class='subtitle'>{{item.goods_brief}}</text>
+        <text class='price'>￥{{item.retail_price}}</text>
+      </view>
+    </view>
+
+  </scroll-view>
+
+
+  <!-- 居家好物 -->
+  <view>
+    <view class='jujia' wx:for="{{homeData.newCategoryList}}">
+      <view class='title'>{{item.name}}好物</view>
+      <view class='jj-item' wx:for="{{item.goodsList}}" bindtap='gotodetail' data-pid="{{item.id}}">
+        <image src='{{item.list_pic_url}}'></image>
+        <text class='jj-name'>{{item.name}}</text>
+        <text class='jj-price'>￥{{item.retail_price}}</text>
+      </view>
+      <view class='jj-item'>
+        <view>{{item.name}}好物</view> 
+    
+      </view>
+    </view>
+  </view>
+
+
+</view>

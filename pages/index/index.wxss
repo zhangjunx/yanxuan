@@ -1,0 +1,183 @@
+/**index.wxss**/
+page{
+  background: #f4f4f4;
+  height: 100%;
+}
+
+.top {
+  display: flex;
+  padding: 0 25rpx 0 10rpx;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80rpx;
+  align-items: center;
+  background: white;
+}
+
+.h-location {
+  width: 115rpx;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 20rpx;
+  line-height: 80rpx;
+}
+
+.h-search {
+  display: flex;
+  flex: 1;
+  background: #ededed;
+  height: 56rpx;
+  border-radius: 8rpx;
+  padding-left: 10rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  align-items: center;
+  margin-left: 10rpx;
+}
+
+.h-search .search {
+  height: 56rpx;
+  border-radius: 8rpx;
+  padding-left: 10rpx;
+  font-size: 28rpx;
+}
+
+.h-search image {
+  width: 28rpx;
+  height: 28rpx;
+}
+
+
+
+.swp{
+  height: 417rpx;
+  width: 100%;
+  
+}
+.swp image{
+  height: 100%;
+  width: 100%;
+}
+
+
+.nav{
+  display: flex;
+  width: 100%;
+  padding: 20rpx 0;
+  background: white;
+  
+  
+}
+.nav-item{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  
+}
+.nav-item image{
+  width: 58rpx;
+  height: 58rpx;
+}
+.nav-item text{
+  font-size: 30rpx;
+}
+
+
+.hot-pro{
+ font-size: 0;
+ white-space: nowrap;
+ background: white;
+ 
+}
+.hp{
+  display: inline-block;
+  position: relative;
+}
+.hp::before{
+  content: "";
+  height: 80%;
+  width: 4rpx;
+  background: #f4f4f4;
+  position: absolute;
+  right: 5rpx;
+  top: 0;
+  bottom: 0;
+  margin:  auto;
+
+}
+.pro-item{
+  width: 280rpx;
+  display: flex;
+  flex-direction: column;
+}
+.pro-item image{
+  width: 100%;
+  height: 280rpx;
+} 
+.pro-item text{
+  margin-top: 10rpx;
+  padding: 0 30rpx;
+}
+.pro-item .title{
+  font-size: 28rpx;
+  color: #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  
+}
+.pro-item .subtitle{
+  font-size: 24rpx;
+  color: #8a8a8a;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.pro-item .price{
+  font-size: 24rpx;
+  color: #9c3232;
+}
+
+.jujia{
+  padding-top: 20rpx;
+}
+.jujia .title{
+  text-align: center;
+  padding-bottom: 20rpx;
+}
+.jj-item{
+  width: 360rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+  padding-bottom: 10rpx;
+  display: inline-block;
+  margin-left: 10rpx;
+  
+}
+.jj-item image{
+  width: 302rpx;
+  height: 302rpx;
+  
+}
+.jj-item text{
+  margin-bottom: 5rpx;
+  text-indent: 1em;
+  font-size: 28rpx;
+}
+.jj-item .jj-name{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 98%;
+  display: block;
+}
+.jj-item .jj-price{
+  color: #9c3232;
+  display: block;
+}
+.jj-item view{
+
+ 
+
+}

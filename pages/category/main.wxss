@@ -1,0 +1,112 @@
+/* pages/category/main.wxss */
+page{
+  height: 100%;
+}
+.cate{
+  height: 88rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #ededed;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+   position: fixed;
+}
+.cate-top{
+  width: 100%;
+  height: 56rpx;
+  border-radius: 8rpx;
+  display: flex;
+  background: #f4f4f4;
+  align-items: center;
+ 
+  justify-content: center;
+ 
+  
+  
+ 
+  
+}
+.cate-top image{
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+  
+}
+.cate-top input{
+  font-size: 28rpx;
+}
+
+
+
+.cate-con{
+  width: 100%;
+  
+ 
+  background: #fff;
+  display: flex;
+ height: 100%;
+ padding-top: 88rpx;
+ box-sizing: border-box;
+  
+}
+
+.con-l{
+  width: 162rpx;
+  height: 100%;
+  text-align: center;
+}
+.con-l .l-item{
+  line-height: 90rpx;
+  height: 90rpx;
+  width: 162rpx;
+  color: #333;
+  font-size: 28rpx;
+  border-left: 6rpx solid transparent;
+}
+.con-l view.active{
+  color: #ab2b2b;
+  font-size: 36rpx;
+  border-left: 6rpx solid #ab2b2b; 
+}
+
+
+
+.con-r{
+  width: calc(100% - 162rpx);
+  border-left:1rpx solid #fafafa;
+  height: 100%;
+  padding: 0 30rpx; 
+}
+.con-r image{
+  width: 100%;
+  height: 222rpx;
+  margin-top: 20rpx;
+}
+.con-r .title{
+    text-align: center;
+    padding: 50rpx 0;
+    font-size: 28rpx;
+    color: #333;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.c-item{
+  width: calc(100% / 3);
+  text-align: center;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.c-item image{
+  width: 144rpx;
+  height: 144rpx;
+}
+
+.c-item text{
+  font-size: 28rpx;
+  color: #333;
+ 
+}

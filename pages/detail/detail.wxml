@@ -1,0 +1,46 @@
+<!--pages/detail/detail.wxml-->
+<view>
+ 
+  <myswiper imgs="{{productDetail.gallery}}"></myswiper>
+  <!-- 请选择规格和数量 -->
+  <view class='gg' bindtap='tanchu'>
+    <text>请选择规格数量</text>
+    <view>></view>
+  </view>
+
+  <!-- 底部固定 -->
+  <view class='foot'>
+    <view class='foot-sc'>☆</view>
+    <view class='foot-gw'>☺
+      <view class='gw'>{{allnum}}</view>
+    </view>
+    <view>立即购买</view>
+    <view class='foot-jr' bindtap='click'>加入购物车</view>
+
+  </view>
+
+
+  <!-- 弹出 -->
+  <view class='show-box' animation="{{animationData}}">
+      <view class='box-top'>
+          <image src='{{productDetail.info.primary_pic_url}}'></image>
+          <view class='box-right'>
+            <text class='price'>价格￥599</text>
+            <text>请选择数量</text>
+          </view>
+      </view>
+      <view class="box-bottom"> 
+        <text>数量</text>  
+        <view class='reduce'>
+            <view bindtap='jian'>-</view>
+            <input type='text' value='{{number}}'></input>
+            <view bindtap='jia'>+</view>
+        </view> 
+      </view>
+   
+  </view>
+  <view class='mc' wx:if="{{isShow}}" bindtap='hide'>
+
+  
+  </view>
+</view>

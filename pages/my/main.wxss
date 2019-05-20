@@ -1,0 +1,26 @@
+/* pages/my/main.wxss */
+.m-header{
+  width: 100%;
+  height: 280rpx;
+  background: #333;
+  display: flex;
+  align-items: center;
+}
+.m-header>image{
+  width: 148rpx;
+  height: 148rpx;
+  border-radius: 50%;
+  margin-left: 30rpx;
+}
+.username{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+
+.username>text{
+  font-size: 30rpx;
+  color: white;
+  margin-bottom: 10rpx;
+  
+  }

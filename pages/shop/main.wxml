@@ -1,0 +1,34 @@
+<!--pages/shop/main.wxml-->
+<view class='shop'>
+  <view  wx:for="{{cartList}}" class='all-item' bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd' animation="{{currentIndex==index?animationData:null}}" data-index="{{index}}">
+    <view class='s-item'  >
+      <view class='i-left'>
+        <view data-index="{{index}}" class='select {{item.select?"active":""}}' bindtap='changeStatus'></view>
+        <image src='{{item.list_pic_url}}'></image>
+        <view class='content'>
+          <text>{{item.goods_name}}</text>
+          <view>￥{{item.retail_price}}</view>
+        </view>
+      </view>
+      <view class='i-right'>
+        x{{item.number}}
+      </view>
+      <view class='del' bindtap='delete' data-index="{{index}}" data-id="{{item.id}}">删除</view>
+    </view>
+
+  </view>
+
+  <!-- 底部 -->
+  <view class='allselect'>
+    <view class='a-left'>
+      <view class='select {{allSelect?"active":""}}' bindtap='selectAll'></view>
+      <text>全选({{selected}})</text>
+    </view>
+    <view class='a-right'>
+      <text>￥{{allNum}}</text>
+      <view>下单</view>
+    </view>
+  </view>
+
+
+</view>

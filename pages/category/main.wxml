@@ -1,0 +1,29 @@
+<!--pages/category/main.wxml-->
+<!-- 搜索框 -->
+<view class='cate'>
+  <view class='cate-top'>
+    <image src='../../images/search.png'></image>
+    <input type='text' placeholder='商品搜索，共239款好物'></input>
+</view>
+</view>
+
+
+
+<view class='cate-con'>
+<!-- 左边 -->
+  <scroll-view class='con-l' scroll-y="true">
+      <view bindtap='changeStatus' data-id="{{item.id}}" data-index="{{index}}" class='l-item {{currentIndex===index?"active":""}}' wx:for="{{categroylist}}">{{item.name}}</view>
+  </scroll-view>
+
+  <!-- 右边 -->
+  <scroll-view scroll-y="true" class='con-r'>
+        <image src='{{oneCategroyProduct.banner_url}}'></image>
+        <view class='title'>--{{oneCategroyProduct.name}}分类--</view>
+        <view class='content'>
+          <view class='c-item' wx:for="{{oneCategroyProduct.subList}}">
+            <image src='{{item.wap_banner_url}}'></image>
+            <text>{{item.name}}</text>
+          </view>
+        </view>
+  </scroll-view>
+</view>
